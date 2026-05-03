@@ -1,0 +1,16 @@
+div
+{
+    height : 100px ;
+    width : 700px ;
+    background-color: aliceblue;
+    /* border-width:3px;
+    border-style: solid;
+    border-color: black; */
+    margin : 7px ;
+    border : 3px solid black ;
+    border-left-color : red ; 
+    /* right top bottom */
+    border-left-width : 5px ;
+    border-radius: 15px;
+}
+
