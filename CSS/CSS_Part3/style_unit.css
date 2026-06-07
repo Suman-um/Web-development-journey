@@ -1,0 +1,49 @@
+h1
+{
+    border : 2px solid black ;
+    width : 50% ; 
+    /* //50 % of the parent element */
+}
+
+#outer
+{
+    height : 400px ;
+    width : 400px ;
+    border : 2px solid black ;
+    background-color : lightcoral;
+    margin-bottom : 21px 
+
+}
+
+#inner
+{
+    height : 50% ;
+    width : 50% ;
+    border : 2px solid black ;
+    margin-left : 10% ;
+     /* 50 % of the parent element */
+     background-color : lightblue;
+
+}
+
+#o
+{
+    height : 400px ;
+    width : 400px ;
+    border : 2px solid black ;
+    background-color : lightcoral;
+    font-size : 20px 
+}
+
+#i
+{
+    height : 50% ;
+    width : 50% ;
+    border : 2px solid black ;
+    margin-left : 10% ;
+     /* 50 % of the parent element */
+     background-color : lightblue;
+     font-size : 0.75em ; 
+     /* relative to the parent element font size  0.75 * 20px*/
+
+}
