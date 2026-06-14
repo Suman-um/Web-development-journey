@@ -1,0 +1,40 @@
+body
+{
+    margin-top : 70px ;
+}
+
+div
+{
+    width : 100px ;
+    height : 50px ;
+    border : 2px black solid ;
+    margin : 10px ;
+    text-align : center ;
+}
+
+#one
+{
+    background-color : #FFEAEE ;
+    /* transform rotate , scale , translate it can be x or y or both*/
+    transform : rotate(20deg) ;
+    transform : scale(1.2);
+    transform : translate(100px,100px) ;
+    /* transform : translateX(20px) */
+}
+#two
+{
+    background-color : #7F675B ;
+}
+#three
+{
+    background-color : #0075F2 ;
+}
+#four
+{
+    background-color : #00F2F2 ;
+}
+#five
+{
+    background-color : #096B72;
+}
+
