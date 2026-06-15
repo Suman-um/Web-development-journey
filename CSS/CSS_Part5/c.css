@@ -1,0 +1,11 @@
+div{
+    margin : 0 auto ;
+    width : 300px ;
+    height : 400px ;
+    background-color : greenyellow ;
+    margin : 2px solid black ;
+    background-image : url("maxim-berg-lnvpji4fC3c-unsplash.jpg");
+    /* background-size : contain ; it will fill the space n number of images  */
+    background-size : cover ; /*it will be one image and it will cover the whole space*/
+    /* background-size : auto ; */
+}

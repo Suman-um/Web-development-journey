@@ -1,6 +1,6 @@
 body
 {
-    margin-top : 70px ;
+    margin-top : 30px ;
 }
 
 div
@@ -32,9 +32,20 @@ div
 #four
 {
     background-color : #00F2F2 ;
+    transform : skew(20deg) ;
 }
 #five
 {
     background-color : #096B72;
+    margin-bottom: 80px ;
 }
 
+#shadow
+{
+    width : 100px ;
+    height : 50px ;
+    margin : 10px ;
+    text-align : center ;
+    background-color : aqua;
+    box-shadow : 10px 10px 10px darkgray
+}
