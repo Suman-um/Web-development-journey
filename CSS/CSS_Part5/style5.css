@@ -1,0 +1,51 @@
+div
+{
+   width : 100px ;
+   height : 100px ;
+   background-color : red ;
+   border : 3px solid black ;
+   display : inline-block ;
+   margin-right :100px;
+}
+
+#static
+{
+    background-color : yellow ;
+    position : static ;
+    top : 100px ;
+    left : 100px ;
+    /* the above properties will not have any changes
+     after u made the div static because static is the default position of the element 
+    and it will not be affected by top, left, right, bottom properties. */
+}
+
+#relative
+{
+    background-color : green;
+    position : relative;
+    top : 100px ;
+    left : 100px ;
+/* relative to itself it shifts top and left 
+by 100px but it will not affect the other elements around it look at the green box */
+}
+
+#absolute
+{
+    background-color : pink;
+    position : absolute;
+    top : 100px ;
+    left : 100px ;
+    /* move from parent perspective  look at the pink box  */
+}
+
+#fixed
+{
+    background-color : lightblue;
+    position : fixed;
+    top : 100px ;
+    left : 100px ;
+    /* when u scroll the position remains fixed u can see the block even if u scroll till 
+    the end of the page
+    eg : Nav bar in every website  */
+}
+
