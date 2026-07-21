@@ -1,0 +1,28 @@
+#container
+{
+    width : 80%;
+    height : 300px ;
+    border: 2px black solid ;
+    margin : 10px auto ;
+    background-color : azure ;
+    display : flex ;
+    /* flex-direction : column ;  */
+    /* //fits column wise */
+}
+
+h2
+{
+    text-align : center ;
+}
+
+#container div
+{
+    height : 80px ;
+    text-align : center ;
+    color :white;
+    font-size : 1.5 ;
+    width : 500px;
+
+    /* Now the inner divs are not aligning with the outer box so we use display flex to fit it nicely  */
+
+}
