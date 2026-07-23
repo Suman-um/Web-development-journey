@@ -6,8 +6,22 @@
     margin : 10px auto ;
     background-color : azure ;
     display : flex ;
-    /* flex-direction : column ;  */
-    /* //fits column wise */
+    flex-direction : row; 
+    /* flex-direction : column ; /* controls the axis */
+    flex-direction : row-reverse ;
+    flex-direction : column-reverse ; */
+    /* justify-content : flex-start ; //default*/
+    justify-content : center ; 
+    /* justify-content : space-between ;
+    justify-content : space-around ;
+    justify-content : space-evenly ; extra space is distributed between the flex items */
+    /* justify-content : flex-end ; */
+    flex-wrap : nowrap ; /* default */
+    flex-wrap : wrap ; /* if the items are more than the container width then it will wrap to next line */
+    flex-wrap : wrap-reverse ; /* if the items are more than the container width then it will wrap to next line but in reverse order */
+    /* align-content is done on cross axis (for all the items) */
+    /* align-item along the cross axis (for an individual item)- higher priority than the align-content*/
+
 }
 
 h2
@@ -17,11 +31,12 @@ h2
 
 #container div
 {
-    height : 80px ;
+    height : 100px ;
     text-align : center ;
     color :white;
     font-size : 1.5 ;
-    width : 500px;
+    /* width : 100px; */
+    width : 300px ;
 
     /* Now the inner divs are not aligning with the outer box so we use display flex to fit it nicely  */
 
