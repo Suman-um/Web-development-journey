@@ -1,0 +1,69 @@
+<!-- We will be learning bootstrap mainly in two categories one is components and layouts -->
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel ="stylesheet" />
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="container">
+    <h2>Bootstrap</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Excepturi, voluptate cupiditate odit corporis quia, 
+        reiciendis ea consectetur nisi ipsam, 
+        temporibus possimus saepe veniam voluptatibus placeat repudiandae ratione 
+        exercitationem rem consequatur?</p>
+
+        <button type="button" class="btn btn-primary">CLick me!</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Get more info</button>
+<button type="button" class="btn btn-danger">Click to know the disadvantages</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<!-- Badges used in notifications like 10+ -->
+ <h5>Notification<span class="badge text-bg-primary">20+</span></h1>
+
+<!-- Badges can be used as part of links or buttons to provide a counter. -->
+ <button type="button" class="btn btn-primary">
+  Notifications <span class="badge text-bg-secondary">4</span>
+</button>
+
+<button class = "btn btn-primary">
+    Followers
+    <span class="badge bg-dark">100+</span>
+</button>
+
+<button type="button" class="btn btn-primary position-relative">
+  Inbox
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    99+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+</div>
+
+<!-- Alerts are used to show a specific message -->
+<br>
+<br>
+<div class="alert alert-danger" role ="alert">
+  Download failed! Please try again
+</div>
+
+<br>
+
+<div class="alert alert-success alert-dismissible" role ="alert">
+  You passed the exam!
+  <button class="btn-close" data-bs-dismiss="alert"></button>
+</div>
+<!-- data-bs-dismiss element is a js element -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
