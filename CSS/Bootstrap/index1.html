@@ -12,12 +12,52 @@
 </head>
 <body>
 <div class="container">
+
+  <nav class = "navbar bg-body-tertiary fixed-top navbar-expand-lg" data-bs-theme="dark">
+    <!-- you can also use sticky top -->
+    <div class="container-fluid">
+      <a href = "#" class = "navbar-brand">Photo Hub</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse"data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+       <div class="navbar-nav">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">About Us</a>
+      <a class="nav-link" href="#">Contact us</a>
+    </div>
+    </div>
+      <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-primary" type="submit">Search</button>
+    </form>
+
+    </div>
+    
+  </nav>
     <h2>Bootstrap</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Excepturi, voluptate cupiditate odit corporis quia, 
         reiciendis ea consectetur nisi ipsam, 
         temporibus possimus saepe veniam voluptatibus placeat repudiandae ratione 
-        exercitationem rem consequatur?</p>
+        exercitationem rem consequatur?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      Excepturi quis quam ex illo temporibus, nesciunt officia, eaque voluptatem nisi
+       magni amet eum veritatis! Corrupti doloribus molestiae ex veniam inventore aut!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cupiditate facilis accusantium, ut id necessitatibus commodi dignissimos neque illo. 
+      Voluptates quibusdam culpa praesentium sapiente facere sed. 
+      Velit distinctio modi neque.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Mollitia totam consectetur pariatur molestias nostrum? Incidunt nemo repellat, voluptate reiciendis culpa quos, 
+    facilis voluptas eaque iste ex delectus consectetur aliquam deleniti!
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+  Impedit reiciendis nemo, cum veniam rem tempore sint enim sunt vitae eaque deleniti maxime veritatis voluptas
+   illo necessitatibus aspernatur quaerat rerum debitis?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Non totam delectus nobis, repellendus, soluta magnam similique possimus officiis iusto inventore placeat tempore provident eius,
+   ipsa vitae sit quia! Libero, ipsum.lore
+Lorem ipsum, dolor sit amet consectetur adipisicing elit
+. Explicabo, cum? Nam placeat, cum minus nemo, vitae laborum facilis, accusantium dolore sapiente nostrum reprehenderit mollitia non provident et nisi odit excepturi?</p>
 
         <button type="button" class="btn btn-primary">CLick me!</button>
 <button type="button" class="btn btn-secondary">Secondary</button>
@@ -64,6 +104,20 @@
   <button class="btn-close" data-bs-dismiss="alert"></button>
 </div>
 <!-- data-bs-dismiss element is a js element -->
+
+
+<!-- Button groups we can create and stack together in a vertical way -->
+ <div class="btn-group" role = "group" aria-label="Basic example">
+  <h6>Button groups</h6>
+  <br>
+  <button type="button" class="btn btn-danger">Warning</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn btn-success">Success</button>
+</div>
+<!-- 
+Button groups require an appropriate role attribute and explicit label to ensure assistive technologies
+ like screen readers identify buttons as grouped and announce them. Use role="group" for button groups 
+ or role="toolbar" for button toolbars. Then use aria-label or aria-labelledby to label them. -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
