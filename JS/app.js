@@ -44,7 +44,25 @@ alert("Somethig is wrong") ;
 let name = prompt("Enter your name:") ;
 console.log(name) ;
 
-//to print an error msg in the console
-console.error("Danger!Something is wrong") ;
-//to print a warning msg in the console
-console.warn("Warning!") ;
+// //to print an error msg in the console
+// console.error("Danger!Something is wrong") ;
+// //to print a warning msg in the console
+// console.warn("Warning!") ;
+
+//String methods 
+let msg = "     Hello" ;
+console.log(msg) ;
+console.log(msg.trim()) ;
+
+//Example : password cannot contain spaces if the user enters space u can trim it 
+let pw = prompt("Enter your password:") ;
+let newpw = pw.trim() ; //always trim creates a new string and does not change the original string
+console.log(newpw) ;
+
+//Strings are immutable in JS
+//to.upperCase() to.lowerCase() 
+//str.indexOf() - returns the index of the first occurence of the specified value 
+//-1 if not found
+let das = "Hello" ;
+console.log(str.indexOf('X')) ;
+
