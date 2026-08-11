@@ -65,4 +65,16 @@ console.log(newpw) ;
 //-1 if not found
 let das = "Hello" ;
 console.log(str.indexOf('X')) ;
+//Method Chaining 
+// let newmsg = das.trim().toUpperCase() ;
 
+//Slice method - extracts a part of a string and returns it as a new string
+let sliced = das.slice(3) ;
+let sliced2 = das.slice(1,4) ;
+console.log(sliced);
+console.log(sliced2) ;
+//if you pass a negative value 
+//slice(-num) = slice(length - num) ;
+
+//str.replace("Hello", "Hi") ;
+//str.repeat(num) - repeated the string the number of times
