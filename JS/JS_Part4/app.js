@@ -50,4 +50,48 @@ function printTable(n)
 
 printTable(5);
 
-//
+//return keyword
+function sum(a , b)
+{
+    return a+b ;
+    //function ends here 
+    console.log("heloo"); //not executed
+}
+let ans = sum(3,4) ;
+console.log(ans) ;
+
+//Scope - Block , Function and Lexical 
+// let sum = 54 //Global Scope 
+function findSum()
+{
+    let sum = a + b ; //Function scope - more specific 
+}
+console.log(sum) ; //Not accessable 
+
+//Block Scope - {} , for loops
+//Lexical Scope
+function outerfunc(){
+    let x = 5 ;
+    let y = 6 ;
+    function innerfunc()
+    {
+        console.log(x) ;
+        console.log(y) ;
+    }
+    // let x = 5 ; Prints x and y if declared after also 
+    // let y = 6 ;
+}
+
+innerfunc() //Throws error
+
+//Function expressions - another way of defining a function
+const sum = function(a,b)
+{
+    return a + b ;
+}
+console.log(sum)  //prints a function
+//How to call?
+sum(1,2) ;
+
+
+
