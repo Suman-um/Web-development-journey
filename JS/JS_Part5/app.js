@@ -75,4 +75,40 @@ setTimeout( ()=>{  //define an arrow function here
 
 console.log("Yakoo!" );
 
+//SetInterval 
+let id = setInterval( () => 
+{
+    console.log("Be confident") ;
+    console.log("Be Bold") ; 
+} , 3000) ; //repeats the function every 3 seconds 
+
+// clearInterval(id) ; //to stop the setinterval
+
+//this keyword in arrow functions
+
+//in normal fn - its own scope -> this - calling object
+//in arrow fn - Lexical scope -> parents scope 
+
+//Qn1 - Write an arrow function that returnsa square of the number n .
+const sq = (n) => n*n ;
+
+//Qn2 - Write a function that prints Hello world five times with an interval of 2seconds
+
+let id2 = setInterval( ()=>
+{
+    console.log("Hello World") ;
+} , 2000) ;
+//5 times = 5*2 = 10 seconds
+setTimeout(()=>
+{
+    clearInterval(id) ;
+},10000) ;
+
+
+
+
+
+
+
+
 
