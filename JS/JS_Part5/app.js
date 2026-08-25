@@ -51,3 +51,28 @@ catch(e) { //e helps to print in an error format
     console.log(e) ;
 }
 
+//Arrow functions
+const sum = (a , b) =>
+{
+    console.log(a + b) ;
+} ; 
+ 
+const cube = (c) =>
+{
+    return c*c*c  ;
+}
+
+//Implicit return - automatic return - when there is a single task to be done  
+
+const mul = (a , b) => (a*b)
+
+//SetTimeout setTimeout(fn , time(in milliseconds)) 
+//used for api calling and requests
+console.log("Hi! There!") ;
+setTimeout( ()=>{  //define an arrow function here 
+    console.log("En madati pa!") ;
+} , 4000) ; //4 sec  it will print the above fn after 4 seconds
+
+console.log("Yakoo!" );
+
+
