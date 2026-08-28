@@ -118,6 +118,41 @@ let min = numbers.reduce((mini , el) =>
   }
 }) ; // min = 1 
 
+//Default parameters - to be taken if not entered the parameters
+
+function sumOfNum(a ,b = 2)
+{
+  return a+b ;
+}
+console.log(sumOfNum(2)) ;
+
+// function sumOfNum(a = 1 , b) ; //throws error default values are written
+//at the end
+
+//minimum function usecase without spread 
+let arre = [1 ,2, 3, 4, 0 ,5 ,7, 2] ;
+console.log(Math.min(arre)); //does not take a whole array as the arguement
+//you have to write it as
+console.log(Math.min(arre[0] , arre[1] , arre[2])) ;
+
+
+//but using spread function
+Math.min(...arre) ;
+
+//individually printing each element
+console.log(...arre) ;
+
+//Using in array Literals
+let arrey = [ 1, 3, 8,9] ;
+let newarrey = [...arrey] ;
+
+const data = 
+{
+  email : "suman@gmail.com" ,
+  passw : "@124" 
+} ;
+let dataCopy = [... data] ;
+
 
 
 
