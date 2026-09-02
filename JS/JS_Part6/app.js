@@ -151,8 +151,48 @@ const data =
   email : "suman@gmail.com" ,
   passw : "@124" 
 } ;
-let dataCopy = [... data] ;
+let dataCopy = [...data] ;
 
+//Rest
 
+function sumn(...args) //all the parameters are stored (collected)in args as an array
+{
+  for(let i=0 ; i<args.length ; i++)
+  {
+    console.log("You gave us :",args[i]) ;
+  }
+}
 
+function mini (a , b , c , d )
+{
+  console.log(arguments) ;
+  //arguements are a collection you cannot push elements in it
+}
 
+mini(1,2,3,4) ;
+
+//Deconstructing - values are extracted from the array and stored in variables
+
+let names = ["Suman" , "Suraj" , "Sandesh" , "Sai", "xyz" , "abc"] ;
+
+// let winner = names[0] ;
+// let runnerup = names[1] ;
+// let third = names[2] ;
+
+//Using deconstructing 
+
+// let [winner , runnerup , third] = names ;
+let [winner , runnerup , third , ...others] = names ; //others is an array of remaining elements
+console.log(winner) ;
+
+//Object deconstructing 
+let stu = 
+{
+  name : "Suman" ,
+  marks : 90 ,
+  cgpa : 7.8 ,
+  username : "@sm" ,
+  password :"abc" ,
+} ;
+
+let {username : usern, password : pass } = stu ;
