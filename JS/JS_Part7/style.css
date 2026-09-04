@@ -2,6 +2,11 @@ body {
   font-family: Arial;
 }
 
+.highlight
+{
+  text-decoration : underline; ;
+}
+
 #mainImg {
   width: 35%;
 }
