@@ -57,6 +57,42 @@ function getRandomColor()
     return color ;
 }
 
+//random button - this concept
+
+let rbtn = document.querySelector("#randomBtn") ;
+rbtn.addEventListener("click" , function()
+{
+  console.dir(this) ;
+  this.style.backgroundColor = "red" ;
+}) ;
+
+//Keyboard inputs 
+let inp = document.querySelector("#randomInput") ;
+inp.addEventListener("keyup" ,function(e)
+{
+  console.log(e) ;
+  console.log("key:" + " " + e.key) ;
+  console.log("code:" + " " +e.code) ;
+  console.log("Key was pressed!") ;
+}) ;
+
+//key down
+// inp.addEventListener("keyup" ,function()
+// {
+//   console.log("Key was pressed!") ;
+// }) ;
+
+let form = document.querySelector("form") ;
+
+form.addEventListener("submit" , function(e)
+{
+   e.preventDefault() ; //prevents the default behaviour of the form, which is to submit and refresh the page
+   alert("Form was submitted!") ;
+}) ;
+
+
+
+
 
 
 
