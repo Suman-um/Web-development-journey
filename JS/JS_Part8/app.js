@@ -84,14 +84,48 @@ inp.addEventListener("keyup" ,function(e)
 
 let form = document.querySelector("form") ;
 
+// form.addEventListener("submit" , function(e)
+// {
+//    e.preventDefault() ; //prevents the default behaviour of the form, which is to submit and refresh the page
+//    alert("Form was submitted!") ;
+// }) ;
+
+//How to access the value of the input field 
 form.addEventListener("submit" , function(e)
 {
-   e.preventDefault() ; //prevents the default behaviour of the form, which is to submit and refresh the page
-   alert("Form was submitted!") ;
+  e.preventDefault() ;
+  //Elements of the form can be accessed using the form property of the event target
+  // let inp = this.form[0] ;
+  // let passw = this.form[1] ;
+  let inp = document.querySelector("#name") ;
+  let passw = document.querySelector("#password") ;
+  console.log(inp.value) ; 
+  console.log(passw.value) ;
+  //not inp.innerText because input fields do not have innerText, they have value
+  alert(`Your password is ${passw.value} and your name is ${inp.value}`) ;
 }) ;
 
 
+//change event - when the value of the input field , select, text area changes, the change event is fired
 
+// form.addEventListener("change" , function(e)
+// {
+//    console.log("Change event fired!") ;
+//    let inp = document.querySelector("#name") ;
+//    console.log(inp.value) ;
+// }) ;
+
+//input event - when the value of the input field (even for a small letter) changes 
+//only for characters , not for backspace or any non character keys
+
+
+let textEditor = document.querySelector("#texteditor") ;
+let para = document.querySelector("#para") ;
+textEditor.addEventListener("input" , function(e)
+{
+   console.log(textEditor.value) ;
+   para.innerText = textEditor.value ;
+}) ;
 
 
 
