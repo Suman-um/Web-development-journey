@@ -119,38 +119,40 @@ function saveToDb(data , success, failure)
 //then and catch methods --- if fulfilled - then 
                       // --- if rejected  - catch
 
-let request = saveToDb("Suman student") // req = promise
-request.then(() =>
-{
-  console.log("Data saved move to next task") ;
-  console.log(request) ;
-})
-.catch(() =>
-{
-  console.log("Solve the error asap") ;
-  console.log(request) ;
-});
+// let request = saveToDb("Suman student") // req = promise
+// request.then(() =>
+// {
+//   console.log("Data saved move to next task") ;
+//   console.log(request) ;
+// })
+// .catch(() =>
+// {
+//   console.log("Solve the error asap") ;
+//   console.log(request) ;
+// });
 
 //Promise Chaining
 
-let request = saveToDb("Suman student") // req = promise
-request.then(() =>
-{
-  console.log("Data saved move to next task") ;
-  console.log(request) ;
-  saveToDb("hello world") ;
-})
-request.then(()=>
-{ 
-   console.log("data2 saved") ;
-}) 
-.catch(() =>
-{
-  console.log("Solve the error asap") ;
-  console.log(request) ;
-});
+// let request = saveToDb("Suman student") // req = promise
+// request.then(() =>
+// {
+//   console.log("Data saved move to next task") ;
+//   console.log(request) ;
+//   saveToDb("hello world") ;
+// })
+// request.then(()=>
+// { 
+//    console.log("data2 saved") ;
+// }) 
+// .catch(() =>
+// {
+//   console.log("Solve the error asap") ;
+//   console.log(request) ;
+// });
 
 //still a better way
+
+//printing result and error with then and catch
 let request = saveToDb("Suman student") // req = promise
 request.then((result) =>
 {
