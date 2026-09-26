@@ -81,6 +81,8 @@ console.log(validRes.fact) ;
 //500 - Internet server error
 
 //ADD MORE INFORMATION IN the String  -
+//q = "mango" //query string where q is the key and mango is the value 
 //www.google.com\search?q="mango" 
 //www.google.com\search?q="harry+potter"
+
 
