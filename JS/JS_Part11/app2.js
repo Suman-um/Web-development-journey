@@ -74,8 +74,6 @@
 // ----------------------------------------------------------------
 
 
-
-
   //LINING ALL HTML + JS 
 
 
@@ -101,7 +99,48 @@ async function getcat()
 catch(e){
    return "No Fact Found" ;
 }
-  }
+ }
+
+//PRINTING A DOG IMAGE ON the SCREEN
+
+let btn2 = document.querySelector("#butn") ;
+
+btn2.addEventListener("click" , async()=>
+{
+  let link = await getImage() ;
+  //console.log(fact);
+  let imag = document.querySelector("#imag");
+  imag.setAttribute("src" , link);
+  console.log(link) ;
+}) ;
+
+
+let url2 = "https://dog.ceo/api/breeds/image/random" ; //storing api url inside the url
+async function getImage()
+{
+  try{
+     let res = await axios.get(url2); //ans = response object
+     return res.data.message;
+}
+catch(e){
+   return "No Image Found" ;
+}
+ }
+
+
+ // PASS HEADERS ALONG WITH URL 
+let url3 = "https://icanhazdadjoke.com/" ; //storing api url inside the url
+async function getJoke()
+{
+  try{
+    const config = {headers : {Accept : application/json}} // if you want in json format 
+     let resu = await axios.get(url3 , config); //ans = response object
+     console.log(resu.data);
+}
+catch(e){
+   return "No Joke Found" ;
+}
+} 
 
 
   

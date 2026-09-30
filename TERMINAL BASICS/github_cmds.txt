@@ -1,0 +1,22 @@
+Using Git : 
+1.Command line
+2.Code Editor(VS Code)
+3.Grahical User Interface
+
+1.Configuring git 
+git config --global user.name "My Name"
+git config --global user.email "someone@gmail.com"
+
+2.//Cloning - downloading a file and bring it in the local computer
+git clone "githublink"
+
+3.git status - to display the status of the Code
+//to basically see the changes from he last commit
+
+4.Two steps to add
+1.add - add new or changed file - to stage the file
+2.commit - record of change
+3.push - upload local repo to remote repo
+
+
+

@@ -1,0 +1,25 @@
+Common commands to use
+1. ls - list all the files
+2. pwd - where am i ? - print working directory
+3. clear - to clear all the previous commands
+4. cd - change directory
+5. cd .. - back button 
+6.mkdir - make directory // to create folder
+
+//flags are the characters that we pass with commands to modify their behaviour.
+
+ls -l //-l is the flags//to quit - q 
+ls -a // hidden folders also shown
+
+7. to create new file - touch command is used.
+8.rm - remove files
+9. rmdir - removes empty folders
+cannot be restored if you use these commands from the command line
+10.rm -rf - removes any folders
+
+What is Git?
+Free and Open source version control system - tools that helps to tracks changes in code
+
+Github - Website where we host repositories online
+
+
