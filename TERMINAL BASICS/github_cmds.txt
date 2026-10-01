@@ -14,9 +14,31 @@ git clone "githublink"
 //to basically see the changes from he last commit
 
 4.Two steps to add
+
 1.add - add new or changed file - to stage the file
+
 2.commit - record of change
-3.push - upload local repo to remote repo
+
+3.push - upload local repo to remote repo  
+
+5.init - to create new git repo
+
+6.git remote add origin "link" //link the github repo to the code
+
+7.git remote -v - to verify remote
+
+8.git branch - to check branch
+
+9.git branch -m main - to rename branch 
+
+10.git push origin main - to push all the code to the repo
+
+11.git push -u origin main - to set the repo where always codes are changed
+
+In github - code changes -> commit 
+In local git - add , commit , push 
+
+12.git checkout "branchname" - to go to that branch 
 
 
 
