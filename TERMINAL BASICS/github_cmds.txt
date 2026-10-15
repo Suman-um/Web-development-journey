@@ -45,7 +45,24 @@ In local git - add , commit , push
 14.git checkout -d "branchname" - to delete the branch
 
 Merging code
-15.git diff "branch name" to compare commits , changes
-16. git merge "branch name" 
+15.git diff "branch name" -- to compare commits , changes
+16. git merge "branch name"  -- to merge the branches.
+
+17.Pull request - lets you tell the changes you've pushed to the branch in a repo on github.
+Merge is also a commit.
+18.Pull - github to local
+git pull origin main
+
+18.How to unadd the changes? (staged changes)
+git reset "filename"
+
+19. To UnCommit -- git reset HEAD~1 
+
+20. git log -- to see all the info of commits
+
+21. git reset hashcode -- to uncommit upto that hashcode
+
+22.fork - is a rough copy 
+
 
 
