@@ -49,11 +49,26 @@ console.log(fs[0].name) ;
 // installed) , package.json file
 //  in your project directory and download the package there.
 
+
+// npm  allows access to a vast library of packages and command line tools
+
 //package.json - contains descriptive and functional metadata about a project. 
 // It is used to give information to npm that allows it to identify the project 
 // as well as handle the project's dependencies.
+
+// node_modules - is a folder where all the dependencies are installed when you run npm install <package_name> command.
+
+//package-lock.json - recoeds the exact versions of all the dependencies and subdependencies downloaded .
 
 //How to recover the node modules folder if it is deleted -
 // by using the command npm install in the project directory where package.json file is present.
 //Whatever dependencies are mentioned in the package.json file will be installed in 
 // the node_modules folder again.
+
+
+//import ans export in JS
+//import{sum} from './math.js' ; //importing sum function from math.js file
+//We cant selectively download load only the peices with require
+//  but with import we can do that.
+
+//Loading is synchronous in require and can be asynchronous in import
